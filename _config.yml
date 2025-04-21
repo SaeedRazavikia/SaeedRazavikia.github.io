@@ -12,24 +12,15 @@ cv: true
 
 # author settings
 author:
-  name: Place Holder
-  email: username@domain.com
+  name: Saeed Razavi
+  email: sraz@kth.se
 photo: assets/files/photo.jpg
-address: Foobar Hall 1.23
-phone: +1 234 567 890
+address: Teknikringen 33
 
 # profile links
 profile:
-  facebook: https://www.facebook.com/username
-  x: https://x.com/username
-  mastodon: https://mastodon.social/@username
-  bluesky: https://bsky.app/profile/username.bsky.social
-  instagram: https://www.instagram.com/username
-  linkedin: https://www.linkedin.com/in/username
-  xing: https://www.xing.com/profile/username
-  stackoverflow: https://stackoverflow.com/users/0000000/username
-  medium: https://medium.com/@username
-  github: https://github.com/username
+  Google Scholar: https://scholar.google.com/citations?hl=en&user=8Nh5BBMAAAAJ&view_op=list_works&sortby=pubdate
+  linkedin: https://www.linkedin.com/in/saeed-razavi-16a045b2/
 
 # build settings
 permalink: pretty
