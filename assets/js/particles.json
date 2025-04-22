@@ -29,14 +29,14 @@
     },
     "line_linked": {
       "enable": true,
-      "distance": 300,
+      "distance": 200,
       "color": "#f1f3f5",
       "opacity": 0.5,
       "width": 1
     },
     "move": {
       "enable": true,
-      "speed": 5,
+      "speed": 8,
       "direction": "none",
       "random": true,
       "straight": false,
@@ -60,7 +60,7 @@
     },
     "modes": {
       "grab": {
-        "distance": 300,
+        "distance": 200,
         "line_linked": {
           "opacity": 1
         }
