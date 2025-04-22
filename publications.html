@@ -10,6 +10,11 @@
   <!--<link rel="stylesheet" href="https://SaeedRazavikia.github.io/assets/css/open-color.min.css"> -->
   <!-- <link rel="stylesheet" href="https://SaeedRazavikia.github.io/assets/css/syntax.css">-->
   <link rel="stylesheet" href="https://SaeedRazavikia.github.io/assets/css/styles.min.css">
+ 
+  
+ 
+
+
 
   <style>
     html, body {
@@ -34,7 +39,18 @@
     color: #d35400;        /* pick any hex / named colour */
     margin-top: 1.5em;     /* optional spacing above */
   }
-
+  .left-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 12px;              
+  height: 100vh;            
+  background-color: #333;  
+  z-index: 1000;
+  }
+  .container.content {
+  margin-left: 12px;        
+  }
     /* bring content above the particles background */
     .content {
       position: relative;
@@ -50,6 +66,7 @@
   </style>
 </head>
 <body>
+<div class="left-bar"></div>
 
   <!-- dynamic background layer -->
   <div id="particles-js"></div>
