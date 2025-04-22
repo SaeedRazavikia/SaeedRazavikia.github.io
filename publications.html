@@ -10,76 +10,100 @@
   <link rel="stylesheet" href="https://SaeedRazavikia.github.io/assets/css/open-color.min.css">
   <link rel="stylesheet" href="https://SaeedRazavikia.github.io/assets/css/syntax.css">
   <link rel="stylesheet" href="https://SaeedRazavikia.github.io/assets/css/styles.min.css">
+
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    /* make particles.js fill the background */
+    #particles-js {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+    /* bring content above the particles background */
+    .content {
+      position: relative;
+      z-index: 1;
+      padding-top: 0;    /* no gap at top */
+    }
+    .content h2 {
+      margin-top: 0;     /* headings start flush */
+    }
+  </style>
 </head>
 <body>
 
-  <!-- particles background applied to just the jumbotron -->
-  <div id="particles-js">
-    <div class="jumbotron text-center py-5 mb-0">
-      <h1 class="particles-subtitle">Publications</h1>
-      <a href="index.html" class="btn btn-outline-light mt-3">← Home</a>
+  <!-- dynamic background layer -->
+  <div id="particles-js"></div>
+
+  <!-- main content, centered in an 8‑col container -->
+  <div class="container content">
+    <div class="row justify-content-center">
+      <div class="col-md-8 text-white">
+
+        <main>
+          <h2>Journals</h2>
+          <ul>
+            <li>[J1] S. Razavikia, J. M. B. da Silva Jr, C. Fischione, “Matrix Computing: Computation by Communications” (under review, IEEE Transactions on Wireless Communications)</li>
+            <li>[J2] S. Razavikia, M. Bokaei, A. Amini, S. Rini, C. Fischione, “DOA Estimation via Optimal Weighted Low‑Rank Matrix Completion” (under review, IEEE Transactions on Vehicular Technology)</li>
+            <li>[J3] O. Stenhammar, S. Razavikia, G. Fodor, C. Fischione, “Geographical Clustering for Predictive Quality of Service of Connected Vehicles” (under review, IEEE Transactions on Vehicular Technology)</li>
+            <li>[J4] S. Daei, S. Razavikia, M. Skoglund, G. Fodor, C. Fischione, “Timely and Painless Breakups: Off‑the‑grid Blind Message Recovery and Users’ Demixing” (under review, IEEE Transactions on Information Theory)</li>
+            <li>[J5] X. Yan, S. Razavikia, C. Fischione, “ReMAC: Digital Multiple Access Computing by Repeated Transmissions,” IEEE Transactions on Communications, 2025.</li>
+            <li>[J6] A. Pérez‑Neira, M. Martinez‑Gost, A. Shahin, S. Razavikia, C. Fischione, K. Huang, “Waveforms for Computing Over the Air,” IEEE Signal Processing Magazine.</li>
+            <li>[J7] S. Razavikia, J. M. B. da Silva Jr, C. Fischione, “Blind Federated Learning via Over‑the‑Air q‑QAM,” IEEE Transactions on Wireless Communications, 2024.</li>
+            <li>[J8] S. Razavikia, J. M. B. da Silva Jr, C. Fischione, “SumComp: Coding for Digital Over‑the‑Air Computation via the Ring of Integers,” IEEE Transactions on Communications, 2024.</li>
+            <li>[J9] S. Razavikia, J. M. B. da Silva Jr, C. Fischione, “ChannelComp: A General Method for Computation by Communications,” IEEE Transactions on Communications, Vol. 72, pp. 692–706, 2024. – IEEE Sweden VT‑COM‑IT Best Student Journal Paper Award 2024</li>
+            <li>[J10] M. Bokaei, S. Razavikia, A. Amini, S. Rini, “Harmonic Retrieval Using Weighted Lifted‑Structure Low‑Rank Matrix Completion,” Signal Processing (Elsevier), Vol. 216, 109253, 2024.</li>
+            <li>[J11] M. Seidi, S. Razavikia, S. Daei, J. Oberhammer, “A Novel Demixing Algorithm for Joint Target Detection and Impulsive Noise Suppression,” IEEE Communications Letters, Vol. 26, pp. 2750–2754, 2022.</li>
+            <li>[J12] H. Zamani, S. Razavikia, H. Otroshi‑Shahreza, A. Amini, “Separation of Nonlinearly Mixed Sources Using End‑to‑End Deep Neural Networks,” IEEE Signal Processing Letters, Vol. 27, pp. 101–105, 2020.</li>
+            <li>[J13] S. Razavikia, A. Amini, S. Daei, “Reconstruction of Binary Shapes From Blurred Images via Hankel‑Structured Low‑Rank Matrix Recovery,” IEEE Transactions on Image Processing, Vol. 29, pp. 2452–2462, 2020.</li>
+          </ul>
+
+          <h2>Conferences</h2>
+          <ul>
+            <li>[C1] S. Hussein, S. Razavikia, S. Daei, C. Fischione, “Communication‑Efficient Distributed Computing via Matrix Factorization,” IEEE Asilomar, 2024.</li>
+            <li>[C2] X. Yan, S. Razavikia, C. Fischione, “A Novel Channel Coding Scheme for Digital Multiple Access Computing,” IEEE ICC, 2024.</li>
+            <li>[C3] H. Helstrom, S. Razavikia, V. Fodor, C. Fischione, “Optimal Receive Filter Design for Misaligned Over‑the‑Air Computation,” IEEE Global Communications Workshop, 2023.</li>
+            <li>[C4] S. Razavikia, S. Daei, C. Fischione, M. Skoglund, G. Fodor, “Off the Grid Blind Deconvolution and Remixing Using Atomic Minimization,” IEEE Global Communications, 2023.</li>
+            <li>[C5] S. Daei, S. Razavikia, M. Kountoris, M. Skoglund, G. Fodor, C. Fischione, “Blind Asynchronized Goal‑Oriented Detection for Massive Connectivity,” IEEE WiOpt, 2023.</li>
+            <li>[C6] S. Razavikia, J. M. B. da Silva Jr, C. Fischione, “Computing Functions Over‑the‑Air Using Digital Modulations,” IEEE ICC, 2023. – IEEE Sweden VT‑COM‑IT Top‑5 Student Conf. Paper Award 2024</li>
+            <li>[C7] S. Razavikia, J. Anguera, J. M. B. da Silva Jr, C. Fischione, “Blind Asynchronous Over‑the‑Air Federated Edge Learning,” IEEE Global Communications Workshop, 2022.</li>
+            <li>[C8] M. Bokaei, S. Razavikia, A. Amini, S. Rini, “Single‑snapshot DOA Estimation via Weighted Hankel‑structured Matrix Completion,” EUSIPCO, 2022.</li>
+            <li>[C9] M. Bokaei, S. Razavikia, A. Amini, S. Rini, “Two‑Snapshot DOA Estimation Via Hankel‑Structured Matrix Completion,” ICASSP, 2022.</li>
+            <li>[C10] S. Razavikia, H. Zamani, A. Amini, “Sampling and Recovery of Binary Shapes via Low‑Rank Structures,” STA, 2019.</li>
+            <li>[C11] S. Razavikia, H. Zamani, A. Amini, “Recovery of a Class of Binary Images from Fourier Samples,” STA, 2019.</li>
+          </ul>
+
+          <h2>In Preparation</h2>
+          <ul>
+            <li>On Designing Modulation for Digital Over‑the‑Air Computation Part I: Optimizing the Distances (IEEE Transactions on Signal Processing)</li>
+            <li>On Designing Modulation for Digital Over‑the‑Air Computation Part II: Sampling Theory (IEEE Transactions on Signal Processing)</li>
+            <li>Optimal Constellation Diagram for Digital Over‑the‑Air Computation (IEEE Transactions on Information Theory)</li>
+            <li>Designing Waveform for Asynchronous Over‑the‑Air Computation (IEEE Signal Processing Letters)</li>
+            <li>Optimal Shannon‑Kotelnikov Map for Over‑the‑Air Computation (IEEE Transactions on Information Theory)</li>
+          </ul>
+
+          <h2>Patents</h2>
+          <ul>
+            <li>[P1] Digital Channel Computation (EPO, PCT/EP2023/054701)</li>
+            <li>[P2] Digital Channel Computation (USPTO, 18/878,793)</li>
+          </ul>
+
+          <h2>Theses</h2>
+          <ul>
+            <li>[L] ChannelComp: A General Framework for Computing by Digital Communication (Licentiate, KTH 2023)</li>
+            <li>[M] Reconstruction of Binary Shapes via Low‑Rank Structures (M.Sc. Thesis, Sharif 2018)</li>
+          </ul>
+        </main>
+
+      </div>
     </div>
-  </div>
-
-  <!-- content appears immediately below -->
-  <div class="container mt-4">
-    <main>
-      <h2>Journals</h2>
-      <ul>
-        <li>[J1] Matrix Computing: Computation by Communications (IEEE TWC, under review)</li>
-        <li>[J2] DOA Estimation via Optimal Weighted Low‑Rank Completion (IEEE TVT, under review)</li>
-        <li>[J3] Geographical Clustering for Predictive QoS of Connected Vehicles (IEEE TVT)</li>
-        <li>[J4] Timely and Painless Breakups: Off‑the‑grid Blind Message Recovery (IEEE TIT, minor revision)</li>
-        <li>[J5] ReMAC: Digital Multiple Access Computing by Repeated Transmissions (IEEE TCOM, 2025)</li>
-        <li>[J6] Waveforms for Computing Over the Air (IEEE Signal Processing Magazine)</li>
-        <li>[J7] Blind Federated Learning via Over‑the‑Air q‑QAM (IEEE TWC, 2024)</li>
-        <li>[J8] SumComp: Coding for Digital Over‑the‑Air Computation via the Ring of Integers (IEEE TCOM, 2024)</li>
-        <li>[J9] ChannelComp: A General Method for Computation by Communications (IEEE TCOM, 2024)  
-            – IEEE Sweden VT‑COM‑IT Best Student Journal Paper Award 2024</li>
-        <li>[J10] Harmonic Retrieval Using Weighted Lifted‑Structure Low‑Rank Matrix Completion (Signal Processing, Elsevier, 2024)</li>
-        <li>[J11] A Novel Demixing Algorithm for Joint Target Detection and Impulsive Noise Suppression (IEEE Comm. Lett., 2022)</li>
-        <li>[J12] Separation of Nonlinearly Mixed Sources Using End‑to‑End DNNs (IEEE SPL, 2020)</li>
-        <li>[J13] Reconstruction of Binary Shapes From Blurred Images via Hankel‑Structured Low‑Rank Matrix Recovery (IEEE TIP, 2020)</li>
-      </ul>
-
-      <h2>Conferences</h2>
-      <ul>
-        <li>[C1] Communication‑Efficient Distributed Computing via Matrix Factorization (Asilomar 2024)</li>
-        <li>[C2] A Novel Channel Coding Scheme for Digital Multiple Access Computing (IEEE ICC 2024)</li>
-        <li>[C3] Optimal Receive Filter Design for Misaligned Over‑the‑Air Computation (GLOBECOM 2023)</li>
-        <li>[C4] Off the Grid Blind Deconvolution and Remixing Using Atomic Minimization (GLOBECOM 2023)</li>
-        <li>[C5] Blind Asynchronized Goal‑Oriented Detection for Massive Connectivity (WiOpt 2023)</li>
-        <li>[C6] Computing Functions Over‑the‑Air Using Digital Modulations (IEEE ICC 2023)  
-            – IEEE Sweden VT‑COM‑IT Top‑5 Student Conf. Paper Award 2024</li>
-        <li>[C7] Blind Asynchronous Over‑the‑Air Federated Edge Learning (GCW 2022)</li>
-        <li>[C8–C11] Additional presentations at EUSIPCO, ICASSP, STA 2019–2022</li>
-      </ul>
-
-      <h2>In Preparation</h2>
-      <ul>
-        <li>Optimal Constellation Diagram for Digital Over‑the‑Air Computation (IEEE TIT)</li>
-        <li>On Designing Modulation for Digital Over‑the‑Air Computation Part I: Optimizing the Distances (IEEE TSP)</li>
-        <li>Part II: Sampling Theory (IEEE TSP)</li>
-        <li>Designing Waveform for Asynchronous Over‑the‑Air Computation (IEEE SPL)</li>
-        <li>Optimal Shannon‑Kotelnikov Map for Over‑the‑Air Computation (IEEE TIT)</li>
-      </ul>
-
-      <h2>Patents</h2>
-      <ul>
-        <li>[P1] Digital Channel Computation (EPO, PCT/EP2023/054701)</li>
-        <li>[P2] Digital Channel Computation (USPTO, 18/878,793)</li>
-      </ul>
-
-      <h2>Theses</h2>
-      <ul>
-        <li>[L] ChannelComp: A General Framework for Computing by Digital Communication (Licentiate, KTH 2023)</li>
-        <li>[M] Reconstruction of Binary Shapes via Low‑Rank Structures (M.Sc. Thesis, Sharif 2018)</li>
-      </ul>
-    </main>
-
-    <footer class="text-center mt-5 mb-3">
-      <small>&copy; Last updated on <time datetime="2025-04-22">April 22, 2025</time>.</small>
-    </footer>
   </div>
 
   <!-- your existing scripts -->
