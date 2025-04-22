@@ -26,6 +26,13 @@
       height: 100%;
       z-index: -1;
     }
+    /* Make just the “Patents” <h2> bigger & coloured */
+  .patents-title {
+    font-size: 2.5rem;     /* adjust as you like */
+    color: #d35400;        /* pick any hex / named colour */
+    margin-top: 1.5em;     /* optional spacing above */
+  }
+
     /* bring content above the particles background */
     .content {
       position: relative;
@@ -38,6 +45,8 @@
     }
     ul.publications { list-style: none; padding-left: 0; }
     ul.publications li { margin-bottom: 1em; }
+    list-style-type: circle;
+    padding-left: 1.5em;   /* indent bullets nicely */
   </style>
 </head>
 <body>
@@ -51,7 +60,7 @@
       <div class="col-md-12 text-white">
        
         <main>
-          <h2>Journals</h2>
+          <h2 class="patents-title">Journals</h2>
           <ul class="publications">
             <li>
               <strong>Matrix Computing: Computation by Communications</strong><br>
@@ -121,7 +130,7 @@
             </li>
           </ul>
 
-          <h2>Conferences</h2>
+          <h2 class="patents-title">Conferences</h2>
           <ul class="publications">
             <li>
               <strong>Communication‑Efficient Distributed Computing via Matrix Factorization</strong><br>
@@ -181,7 +190,7 @@
             </li>
           </ul>
 
-          <h2>Patents</h2>
+          <h2 class="patents-title">Patents</h2>
           <ul class="publications">
             <li>
               <strong>Digital Channel Computation</strong><br>
@@ -195,7 +204,7 @@
             </li>
           </ul>
 
-          <h2>Theses</h2>
+          <h2 class="patents-title">Theses</h2>
           <ul class="publications">
             <li>
               <a href="https://www.diva-portal.org/smash/record.jsf?pid=diva2%3A1808587&dswid=-6111"><strong>ChannelComp: A General Framework for Computing by Digital Communication</strong></a><br>
