@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Publications | Saeed Razavi</title>
 
-  <!-- Use same styles as index.html -->
+  <!-- same styles as index.html -->
   <link rel="stylesheet" href="https://SaeedRazavikia.github.io/assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://SaeedRazavikia.github.io/assets/css/open-color.min.css">
   <link rel="stylesheet" href="https://SaeedRazavikia.github.io/assets/css/syntax.css">
@@ -13,66 +13,97 @@
 </head>
 <body>
 
-  <!-- Background Animation -->
+  <!-- full‑screen hero with particles -->
   <div id="particles-js" class="fullscreen">
     <div class="jumbotron text-center">
       <h1 class="particles-title">Publications</h1>
-      <h2 class="particles-subtitle">Saeed Razavi's Research Portfolio</h2>
+      <h2 class="particles-subtitle">Saeed Razavi’s Research Portfolio</h2>
+      <!-- Back to home -->
       <a href="index.html" class="btn btn-outline-light mt-3">← Back to Home</a>
+    </div>
+    <!-- scroll arrow -->
+    <div class="particles-scroll">
+      <a class="particles-icon" href="#scroll">
+        <svg width="24px" height="24px" stroke-width="1.5" viewBox="0 0 24 24"
+             fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000">
+          <path d="M6 9l6 6 6-6" stroke="#000000" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
     </div>
   </div>
 
-  <!-- Push content below fullscreen header -->
-  <div class="container mt-5 pt-5">
+  <!-- actual content, unlocked once you scroll or click the arrow -->
+  <div class="container">
     <div class="row justify-content-center">
-      <div class="col col-sm-10 col-md-8 col-lg-10">
-        <main class="mt-5 pt-5">
-          <h2>Journals</h2>
-          <ul>
-            <li>[J1] Matrix Computing: Computation by Communications (IEEE TWC, under review)</li>
-            <li>[J2] DOA Estimation via Weighted Low-Rank Completion (IEEE TVT)</li>
-            <li>[J3] Predictive QoS for Vehicles (IEEE TVT)</li>
-            <li>[J4] Blind Message Recovery (IEEE TIT)</li>
-            <li>[J5] ReMAC (IEEE TCOM, 2025)</li>
-            <li>[J6] OTA Waveforms (IEEE SPM)</li>
-            <li>[J7] Blind Federated Learning via q-QAM (IEEE TWC, 2024)</li>
-            <li>[J8] SumComp (IEEE TCOM, 2024)</li>
-            <li>[J9] ChannelComp (IEEE TCOM, 2024, Awarded)</li>
-            <li>[J10–J13] Other journal papers (TIP, SPL, etc.)</li>
-          </ul>
+      <div class="col col-sm-10 col-md-8 col-lg-6">
+        <article id="home">
+          <!-- scroll target + theme toggle -->
+          <div id="scroll" class="toggle-bar">
+            <a id="theme-toggle" class="toggle-icon" onclick="modeSwitcher()"></a>
+          </div>
 
-          <h2>Conferences</h2>
-          <ul>
-            <li>[C1–C11] Presented at IEEE ICC, Asilomar, GLOBECOM, EUSIPCO, ICASSP, etc.</li>
-          </ul>
+          <main class="mt-4">
+            <h2>Journals</h2>
+            <ul>
+              <li>[J1] Matrix Computing: Computation by Communications (IEEE TWC, under review)</li>
+              <li>[J2] DOA Estimation via Optimal Weighted Low-Rank Completion (IEEE TVT, under review)</li>
+              <li>[J3] Geographical Clustering for Predictive Quality of Service of Connected Vehicles (IEEE TVT)</li>
+              <li>[J4] Timely and Painless Breakups: Off‑the‑grid Blind Message Recovery (IEEE TIT, minor revision)</li>
+              <li>[J5] ReMAC: Digital Multiple Access Computing by Repeated Transmissions (IEEE TCOM, 2025)</li>
+              <li>[J6] Waveforms for Computing Over the Air (IEEE Signal Processing Magazine)</li>
+              <li>[J7] Blind Federated Learning via Over‑the‑Air q‑QAM (IEEE TWC, 2024)</li>
+              <li>[J8] SumComp: Coding for Digital Over‑the‑Air Computation via the Ring of Integers (IEEE TCOM, 2024)</li>
+              <li>[J9] ChannelComp: A General Method for Computation by Communications (IEEE TCOM, 2024) <br>  – IEEE Sweden VT‑COM‑IT Best Student Journal Paper Award 2024</li>
+              <li>[J10] Harmonic Retrieval Using Weighted Lifted-Structure Low-Rank Matrix Completion (Signal Processing, Elsevier, 2024)</li>
+              <li>[J11] A Novel Demixing Algorithm for Joint Target Detection and Impulsive Noise Suppression (IEEE Comm Lett, 2022)</li>
+              <li>[J12] Separation of Nonlinearly Mixed Sources Using End-to-End DNNs (IEEE SPL, 2020)</li>
+              <li>[J13] Reconstruction of Binary Shapes From Blurred Images via Hankel-Structured Low-Rank Matrix Recovery (IEEE TIP, 2020)</li>
+            </ul>
 
-          <h2>In Preparation</h2>
-          <ul>
-            <li>OTA Constellation Design (Parts I–III)</li>
-            <li>Waveforms for Async OTA</li>
-            <li>Shannon-Kotelnikov Map</li>
-          </ul>
+            <h2>Conferences</h2>
+            <ul>
+              <li>[C1] Communication‑Efficient Distributed Computing via Matrix Factorization (Asilomar 2024)</li>
+              <li>[C2] A Novel Channel Coding Scheme for Digital Multiple Access Computing (IEEE ICC 2024)</li>
+              <li>[C3] Optimal Receive Filter Design for Misaligned Over‑the‑Air Computation (GLOBECOM 2023)</li>
+              <li>[C4] Off the Grid Blind Deconvolution and Remixing Using Atomic Minimization (GLOBECOM 2023)</li>
+              <li>[C5] Blind Asynchronized Goal‑Oriented Detection for Massive Connectivity (WiOpt 2023)</li>
+              <li>[C6] Computing Functions Over‑the‑Air Using Digital Modulations (IEEE ICC 2023) <br>  – IEEE Sweden VT‑COM‑IT Top‑5 Student Conf. Paper Award 2024</li>
+              <li>[C7] Blind Asynchronous Over‑the‑Air Federated Edge Learning (GCW 2022)</li>
+              <li>[C8–C11] Additional presentations at EUSIPCO, ICASSP, STA 2019–2022</li>
+            </ul>
 
-          <h2>Patents</h2>
-          <ul>
-            <li>[P1] Digital Channel Computation (EPO)</li>
-            <li>[P2] Digital Channel Computation (USPTO)</li>
-          </ul>
+            <h2>In Preparation</h2>
+            <ul>
+              <li>Optimal Constellation Diagram for Digital Over‑the‑Air Computation (IEEE TIT)</li>
+              <li>On Designing Modulation for Digital Over‑the‑Air Computation Part I: Optimizing the Distances (IEEE TSP)</li>
+              <li>Part II: Sampling Theory (IEEE TSP)</li>
+              <li>Designing Waveform for Asynchronous Over‑the‑Air Computation (IEEE SPL)</li>
+              <li>Optimal Shannon‑Kotelnikov Map for Over‑the‑Air Computation (IEEE TIT)</li>
+            </ul>
 
-          <h2>Theses</h2>
-          <ul>
-            <li>Licentiate: ChannelComp (KTH, 2023)</li>
-            <li>Master: Binary Shape Recovery (Sharif, 2018)</li>
-          </ul>
-        </main>
-        <footer class="text-center mt-5 mb-3">
-          <small>&copy; Last updated on <time datetime="2025-04-22">April 22, 2025</time>.</small>
-        </footer>
+            <h2>Patents</h2>
+            <ul>
+              <li>[P1] Digital Channel Computation (EPO, PCT/EP2023/054701)</li>
+              <li>[P2] Digital Channel Computation (USPTO, 18/878,793)</li>
+            </ul>
+
+            <h2>Theses</h2>
+            <ul>
+              <li>[L] ChannelComp: A General Framework for Computing by Digital Communication (Doctoral Licentiate, KTH, 2023)</li>
+              <li>[M] Reconstruction of Binary Shapes via Low‑Rank Structures (M.Sc. Thesis, Sharif, 2018)</li>
+            </ul>
+          </main>
+
+          <footer class="text-center mt-5 mb-3">
+            <small>&copy; Last updated on <time datetime="2025-04-22">April 22, 2025</time>.</small>
+          </footer>
+        </article>
       </div>
     </div>
   </div>
 
-  <!-- JS -->
+  <!-- same scripts as index.html -->
   <script src="https://SaeedRazavikia.github.io/assets/js/bootstrap.min.js"></script>
   <script src="https://SaeedRazavikia.github.io/assets/js/darkmode.js"></script>
   <script src="assets/js/particles.min.js"></script>
