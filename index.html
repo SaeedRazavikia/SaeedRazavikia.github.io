@@ -1,7 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 
+ .home-button {
+     display: inline-block;
+     padding: 8px 16px;
+     background-color: #444;     /* slightly lighter than sidebar */
+     border: 1px solid #555;
+     border-radius: 8px;
+     color: #dceaf7;
+     text-decoration: none;
+     font-size: 1rem;
 
+     /* make sure it’s always on top and clickable */
+     position: relative;
+     z-index: 1002;
+     cursor: pointer;
+   }
+   .home-button:hover {
+     background-color: #555;
+     border-color: #666;
+   }
   
 <head>
   <meta charset="UTF-8">
