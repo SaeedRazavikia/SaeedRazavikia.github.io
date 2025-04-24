@@ -43,9 +43,9 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 200px;              /* Fixed width instead of percentage */
-    height: 100vh;            
-    background-color: #333;  
+    width: 200px;
+    height: 100vh;
+    background-color: #333;
     z-index: 1001;
     display: flex;
     flex-direction: column;
@@ -57,12 +57,21 @@
     flex-direction: column;
     align-items: center;
   }
+  .particles-photo {
+    width: 150px;
+    height: auto;
+    margin: 20px auto;
+  }
+  .particles-icon {
+    margin: 20px auto;
+    text-align: center;
+  }
   .left-bar-footer {
     padding: 20px;
     border-top: 1px solid #444;
     color: #ffffff;
     text-align: center;
-    width: 100%;              /* Ensure full width */
+    width: 100%;
   }
   .contact-info {
     margin-bottom: 15px;
@@ -75,8 +84,10 @@
     align-items: center;
   }
   .container.content {
-    margin-left: 200px;        /* Match the left-bar width */
+    margin-left: 200px;
     padding: 20px;
+    position: relative;
+    z-index: 1;
   }
   .particles-icon  {
   stroke: #f9f9f9; /* LinkedIn's brand color */
@@ -116,12 +127,12 @@
   /* Mobile responsiveness */
   @media (max-width: 768px) {
     .left-bar {
-      position: relative;     /* Change to relative positioning on mobile */
-      width: 100%;           /* Full width on mobile */
-      height: auto;          /* Auto height on mobile */
+      position: relative;
+      width: 100%;
+      height: auto;
     }
     .container.content {
-      margin-left: 0;        /* Remove left margin on mobile */
+      margin-left: 0;
       padding: 20px;
       width: 100%;
     }
@@ -130,8 +141,11 @@
       padding: 20px;
     }
     .particles-photo {
-      margin: 0 auto;
-      max-width: 200px;
+      margin: 20px auto;
+      max-width: 150px;
+    }
+    .particles-icon {
+      margin: 20px auto;
     }
     .left-bar-footer {
       padding: 20px;
