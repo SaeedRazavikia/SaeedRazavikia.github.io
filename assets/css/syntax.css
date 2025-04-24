@@ -1,4 +1,4 @@
-  .home-button {
+.home-button {
     display: inline-block;
     padding: 12px 20px;
     background-color: #444; /* slightly lighter than sidebar */
@@ -9,7 +9,7 @@
     font-size: 1rem;
     transition: background-color 0.3s ease, border-color 0.3s ease;
   }
-  .home-button:hover {
+.home-button:hover {
     background-color: #555;
     border-color: #666;
   }
