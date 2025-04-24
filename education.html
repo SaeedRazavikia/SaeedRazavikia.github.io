@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Publications | Saeed Razavi</title>
+
+  <!-- your existing styles -->
+  <link rel="stylesheet" href="https://SaeedRazavikia.github.io/assets/css/bootstrap.min.css">
+  <!--<link rel="stylesheet" href="https://SaeedRazavikia.github.io/assets/css/open-color.min.css"> -->
+  <!-- <link rel="stylesheet" href="https://SaeedRazavikia.github.io/assets/css/syntax.css">-->
+  <link rel="stylesheet" href="https://SaeedRazavikia.github.io/assets/css/styles.min.css">
+ 
+  
+ 
+
+
+
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      background-color: #f8ffff;
+      color: #000000;
+    }
+    /* make particles.js fill the background */
+    #particles-js {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+    /* Make just the "Patents" <h2> bigger & coloured */
+  .patents-title {
+    font-size: 2.5rem;     /* adjust as you like */
+    color: #716660;        /* pick any hex / named colour */
+    margin-top: 1.5em;     /* optional spacing above */
+  }
+  .left-bar {
+    flex: 0 0 400px;           /* Increased sidebar width to twice (400px) */
+    position: relative;
+    height: 100vh;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+  }
+  .left-bar-content {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .particles-photo {
+    width: 150px;
+    height: auto;
+    margin: 20px auto;
+  }
+  .particles-icon {
+    margin: 20px auto;
+    text-align: center;
+  }
+  .left-bar-footer {
+    padding: 20px;
+    border-top: 1px solid #444;
+    color: #ffffff;
+    text-align: center;
+    width: 100%;
+  }
+  .social-icons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+  }
+  .container.content {
+    flex: 1;
+    margin: 0;                 /* Remove default centering margins */
+    width: auto;
+    max-width: none;           /* Allow full width usage */
+    padding: 20px 30px;        /* 30px left/right margin for content */
+    overflow-y: auto;
+  }
+  .particles-icon  {
+    stroke: #f9f9f9; /* LinkedIn's brand color */
+    transition: stroke 0.3s ease;
+  }
+
+  /* Styled button for the Home Page link */
+  .home-button {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #444; /* slightly lighter than sidebar */
+    border: 1px solid #555;
+    border-radius: 8px;
+    color: #dceaf7;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+  }
+  .home-button:hover {
+    background-color: #555;
+    border-color: #666;
+  }
+
+    /* bring content above the particles background */
+    .content {
+      position: relative;
+      z-index: 1;
+      padding-top: 0;
+    }
+    .content h2 {
+      margin-top: 20pt;
+      width: 100%;
+    }
+    ul.publications { list-style: circle; padding-left:  1.5em; }
+    ul.publications li { margin-bottom: 1em; }
+  /* Use flex layout for side-by-side pages */
+  body {
+    display: flex;
+    height: 100vh;
+    margin: 0;
+  }
+
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    /* Stack layout on mobile */
+    body {
+      display: block;
+    }
+    .left-bar {
+      width: 100%;
+      position: relative;
+      height: auto;
+    }
+    .container.content {
+      width: 100%;
+      margin: 0;
+      padding: 20px;
+    }
+    .left-bar-content {
+      text-align: center;
+      padding: 20px;
+    }
+    .particles-photo {
+      margin: 20px auto;
+      max-width: 150px;
+    }
+    .particles-icon {
+      margin: 20px auto;
+    }
+    .left-bar-footer {
+      padding: 20px;
+      width: 100%;
+    }
+  }
+
+  /* For very small screens */
+  @media (max-width: 480px) {
+    .left-bar {
+      padding: 5px;          /* Reduce padding further */
+    }
+    .particles-photo {
+      max-width: 150px;      /* Even smaller photo */
+    }
+  }
+
+  /* Publication title color: linked titles in navy, unlinked titles in black */
+  ul.publications li > a > strong {
+    color: #001f3f;  /* navy for links */
+  }
+  ul.publications li > strong {
+    color: #000;     /* black for non-links */
+  }
+  /* Highlight my name in author lists */
+  .my-name {
+    color: #d35400; /* a nice burnt orange */
+    font-weight: bold;
+  }
+
+  </style>
+</head>
+<body>
+<div class="left-bar">
+  <div class="left-bar-content">
+    <img class="particles-photo" src="assets/files/sr.jpg" style="width: 256px; height: auto;" />
+    <a class="home-button" href="https://SaeedRazavikia.github.io/index.html" title="Home Page">Home Page</a>
+  </div>
+  
+  <div class="left-bar-footer">
+    <div class="social-icons">
+      <a class="particles-icon" href="https://www.linkedin.com/in/saeed-razavi-16a045b2/" title="LinkedIn"> 
+        <svg width="24px" height="24px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M21 8v8a5 5 0 01-5 5H8a5 5 0 01-5-5V8a5 5 0 015-5h8a5 5 0 015 5zM7 17v-7" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+          <path d="M11 17v-3.25M11 10v3.75m0 0c0-3.75 6-3.75 6 0V17M7 7.01l.01-.011" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg>
+      </a>
+      <a class="particles-icon" href="https://scholar.google.com/citations?user=YOUR_SCHOLAR_ID" title="Google Scholar">
+        <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 100 14 7 7 0 000-14z" stroke="#ffffff" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+      <a class="particles-icon" href="mailto:your.email@example.com" title="Email">
+        <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+      <a class="particles-icon" href="https://github.com/yourusername" title="GitHub">
+        <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+</div>
+  </div>
+
+  <!-- dynamic background layer -->
+  <div id="particles-js"></div>
+
+  <!-- main content, centered in an 8‑col container -->
+  <div class="container content">
+    <div class="row justify-content-center">
+      <div class="col-md-12 text-black">
+       
+        <main>
+          <h2 class="patents-title">Education</h2>
+          <ul class="publications">
+            <li>
+              <strong>KTH Royal Institute of Technology</strong><br>
+              School of Electrical Engineering and Computer Science<br>
+               <em>Advisor: Professor Carlo Fischione</em>
+            </li>
+            <li>
+              <strong>Licentiate degree in Electrical Engineering</strong><br>
+              KTH Royal Institute of Technology<br>
+              <em>Thesis: A General Framework for Computing by Digital Communication</em>
+            </li>
+            <li>
+              <strong>Masters in Electrical Engineering</strong><br>
+              Sharif University of Technology<br>
+            <em>Thesis: Reconstruction of Binary Shapes via Low-Rank Structures</em>
+            </li>
+            <li>
+              <strong>Bachelor in Electrical Engineering</strong><br>
+              Iran University of Science and Technology <br>
+               <em>Thesis: Spectral Compressed Sensing via Matrix Completion</em>
+            </li>
+          </ul>
+
+          <h2 class="patents-title">Honors and Awards</h2>
+          <ul class="publications">
+            <li>
+              <br> Recipient of the visiting abroad scholarship with <strong>Hans Werthen Foundation </strong>  from Royal Academy of Engineering Sciences. <br>
+            </li>
+            <li>
+                <br> Recipient of the Ph.D. Admission with <strong>Wallenberg AI, Autonomous Systems and Software Program </strong>  from KTH Royal Institute of Technology. <br>
+            </li>
+            <li>
+                <br> Offered of the Ph.D. Admission with <strong> Full Scholarship from Imperial College London </strong>. <br>
+            </li>
+            <li>
+                <br> IEEE Sweden  <strong>VT-COM-IT Joint Chapter </strong> Best Student Journal Paper Award 2024. <br>
+            </li>
+          </ul>
+        </main>
+
+      </div>
+    </div>
+  </div>
+</body>
+</html>
