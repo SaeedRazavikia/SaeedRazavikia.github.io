@@ -43,23 +43,26 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 15%;              /* Reduced from 25% to 15% */
+    width: 200px;              /* Fixed width instead of percentage */
     height: 100vh;            
     background-color: #333;  
     z-index: 1001;
     display: flex;
     flex-direction: column;
-    transition: all 0.3s ease; /* Smooth transition for width changes */
   }
   .left-bar-content {
     flex: 1;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .left-bar-footer {
     padding: 20px;
     border-top: 1px solid #444;
     color: #ffffff;
     text-align: center;
+    width: 100%;              /* Ensure full width */
   }
   .contact-info {
     margin-bottom: 15px;
@@ -72,8 +75,8 @@
     align-items: center;
   }
   .container.content {
-    margin-left: 15%;        /* Match the left-bar width */
-    padding: 20px;           /* Add some padding */
+    margin-left: 200px;        /* Match the left-bar width */
+    padding: 20px;
   }
   .particles-icon  {
   stroke: #f9f9f9; /* LinkedIn's brand color */
@@ -116,23 +119,23 @@
       position: relative;     /* Change to relative positioning on mobile */
       width: 100%;           /* Full width on mobile */
       height: auto;          /* Auto height on mobile */
-      padding: 10px;         /* Add padding */
     }
     .container.content {
       margin-left: 0;        /* Remove left margin on mobile */
-      padding: 20px;         /* Add some padding */
-      width: 100%;          /* Ensure full width */
+      padding: 20px;
+      width: 100%;
     }
     .left-bar-content {
-      text-align: center;    /* Center content on mobile */
-      padding: 10px;         /* Add padding */
+      text-align: center;
+      padding: 20px;
     }
     .particles-photo {
-      margin: 0 auto;        /* Center the photo */
-      max-width: 200px;      /* Limit photo size on mobile */
+      margin: 0 auto;
+      max-width: 200px;
     }
     .left-bar-footer {
-      padding: 10px;         /* Reduce padding on mobile */
+      padding: 20px;
+      width: 100%;
     }
   }
 
