@@ -19,7 +19,7 @@
   <style>
     html, body {
       height: 100%;
-      margin: 20px;
+      margin: 0;
       padding: 0;
       background-color: #f8ffff;
       color: #000000;
@@ -40,13 +40,10 @@
     margin-top: 1.5em;     /* optional spacing above */
   }
   .left-bar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 200px;
+    flex: 0 0 200px;
+    position: relative;
     height: 100vh;
     background-color: #333;
-    z-index: 1001;
     display: flex;
     flex-direction: column;
   }
@@ -84,10 +81,9 @@
     align-items: center;
   }
   .container.content {
-    margin-left: 200px;
+    flex: 1;
     padding: 20px;
-    position: relative;
-    z-index: 1;
+    overflow-y: auto;
   }
   .particles-icon  {
   stroke: #f9f9f9; /* LinkedIn's brand color */
@@ -107,34 +103,28 @@
     }
     ul.publications { list-style: circle; padding-left:  1.5em; }
     ul.publications li { margin-bottom: 1em; }
-      body {
-    position: relative;        /* establish positioning context */
-    margin-left: 12px;         /* push all content right of the bar */
-  }
-  
-  /* create the bar */
-  body::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 480px;               /* thickness of the bar */
+  /* Use flex layout for side-by-side pages */
+  body {
+    display: flex;
     height: 100vh;
-    background-color: #333;    /* choose your dark color */
-    z-index: 1000;
+    margin: 0;
   }
 
   /* Mobile responsiveness */
   @media (max-width: 768px) {
+    /* Stack layout on mobile */
+    body {
+      display: block;
+    }
     .left-bar {
-      position: relative;
       width: 100%;
+      position: relative;
       height: auto;
     }
     .container.content {
-      margin-left: 0;
-      padding: 20px;
       width: 100%;
+      margin: 0;
+      padding: 20px;
     }
     .left-bar-content {
       text-align: center;
