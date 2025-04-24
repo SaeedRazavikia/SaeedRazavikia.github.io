@@ -43,12 +43,13 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 25%;              /* Changed from fixed 500px to percentage */
+    width: 15%;              /* Reduced from 25% to 15% */
     height: 100vh;            
     background-color: #333;  
     z-index: 1001;
     display: flex;
     flex-direction: column;
+    transition: all 0.3s ease; /* Smooth transition for width changes */
   }
   .left-bar-content {
     flex: 1;
@@ -71,7 +72,8 @@
     align-items: center;
   }
   .container.content {
-    margin-left: 25%;        /* Changed from fixed 500px to match left-bar width */
+    margin-left: 15%;        /* Match the left-bar width */
+    padding: 20px;           /* Add some padding */
   }
   .particles-icon  {
   stroke: #f9f9f9; /* LinkedIn's brand color */
@@ -114,16 +116,33 @@
       position: relative;     /* Change to relative positioning on mobile */
       width: 100%;           /* Full width on mobile */
       height: auto;          /* Auto height on mobile */
+      padding: 10px;         /* Add padding */
     }
     .container.content {
       margin-left: 0;        /* Remove left margin on mobile */
       padding: 20px;         /* Add some padding */
+      width: 100%;          /* Ensure full width */
     }
     .left-bar-content {
       text-align: center;    /* Center content on mobile */
+      padding: 10px;         /* Add padding */
     }
     .particles-photo {
       margin: 0 auto;        /* Center the photo */
+      max-width: 200px;      /* Limit photo size on mobile */
+    }
+    .left-bar-footer {
+      padding: 10px;         /* Reduce padding on mobile */
+    }
+  }
+
+  /* For very small screens */
+  @media (max-width: 480px) {
+    .left-bar {
+      padding: 5px;          /* Reduce padding further */
+    }
+    .particles-photo {
+      max-width: 150px;      /* Even smaller photo */
     }
   }
 
