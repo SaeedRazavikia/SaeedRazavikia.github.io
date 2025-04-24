@@ -70,10 +70,6 @@
     text-align: center;
     width: 100%;
   }
-  .contact-info {
-    margin-bottom: 15px;
-    font-size: 14px;
-  }
   .social-icons {
     display: flex;
     gap: 15px;
@@ -89,10 +85,26 @@
     overflow-y: auto;
   }
   .particles-icon  {
-  stroke: #f9f9f9; /* LinkedIn's brand color */
-  transition: stroke 0.3s ease;
-}
+    stroke: #f9f9f9; /* LinkedIn's brand color */
+    transition: stroke 0.3s ease;
+  }
 
+  /* Styled button for the Home Page link */
+  .home-button {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #444; /* slightly lighter than sidebar */
+    border: 1px solid #555;
+    border-radius: 8px;
+    color: #dceaf7;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+  }
+  .home-button:hover {
+    background-color: #555;
+    border-color: #666;
+  }
 
     /* bring content above the particles background */
     .content {
@@ -156,20 +168,26 @@
     }
   }
 
+  /* Highlight publication titles in a dark navy blue */
+  ul.publications li > strong {
+    color: #001f3f;
+  }
+  /* Highlight my name in author lists */
+  .my-name {
+    color: #d35400; /* a nice burnt orange */
+    font-weight: bold;
+  }
+
   </style>
 </head>
 <body>
 <div class="left-bar">
   <div class="left-bar-content">
     <img class="particles-photo" src="assets/files/sr.jpg" style="width: 256px; height: auto;" />
-    <a class="particles-icon" href="https://SaeedRazavikia.github.io/index.html" title="Home Page" style="color: #dceaf7;"><span style="font-size: 32px;">Home Page</span></a>
+    <a class="home-button" href="https://SaeedRazavikia.github.io/index.html" title="Home Page">Home Page</a>
   </div>
   
   <div class="left-bar-footer">
-    <div class="contact-info">
-      <p>Email: your.email@example.com</p>
-      <p>Phone: +46 XX XXX XX XX</p>
-    </div>
     <div class="social-icons">
       <a class="particles-icon" href="https://www.linkedin.com/in/saeed-razavi-16a045b2/" title="LinkedIn"> 
         <svg width="24px" height="24px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -372,5 +390,12 @@
   <script src="https://SaeedRazavikia.github.io/assets/js/darkmode.js"></script>
   <script src="assets/js/particles.min.js"></script>
   <script src="assets/js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      document.querySelectorAll('.publications li').forEach(function(li) {
+        li.innerHTML = li.innerHTML.replace(/S\.\s*Razavikia/g, '<span class="my-name">S. Razavikia</span>');
+      });
+    });
+  </script>
 </body>
 </html>
