@@ -175,9 +175,10 @@
   ul.publications li > strong {
     color: #000;     /* black for non-links */
   }
-  /* Highlight my name in author lists (bold via <strong>) */
-  strong.my-name {
+  /* Highlight my name in author lists */
+  .my-name {
     color: #d35400; /* a nice burnt orange */
+    font-weight: bold;
   }
 
   </style>
@@ -395,10 +396,10 @@
   <script>
     document.addEventListener('DOMContentLoaded', function() {
       document.querySelectorAll('.publications li').forEach(function(li) {
-        // match S. Razavikia even if non-breaking spaces
-        var regex = /S\.[\s\u00A0]*Razavikia/g;
+        // match S. Razavikia including non-breaking spaces and HTML entities
+        var regex = /S\.(?:&nbsp;|\u00A0|\s)+Razavikia/g;
         li.innerHTML = li.innerHTML.replace(regex, function(match) {
-          return '<strong class="my-name">' + match + '</strong>';
+          return '<span class="my-name">' + match + '</span>';
         });
       });
     });
