@@ -298,6 +298,12 @@
 .particles-photo {
   margin-top: 20px;
 }
+/* Layout home-button links inline with spacing */
+.nowrap {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
 /* Allow clicks to pass through the particles background */
 #particles-js, .fullscreen {
   position: fixed !important;
