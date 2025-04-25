@@ -294,7 +294,10 @@
   background-color: #555;
   border-color: #666;
 }
-
+/* Add top margin for the particles-photo image */
+.particles-photo {
+  margin-top: 20px;
+}
 /* Allow clicks to pass through the particles background */
 #particles-js, .fullscreen {
   position: fixed !important;
