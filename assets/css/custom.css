@@ -1,29 +1,27 @@
-<style>
-  /* Styling the About title */
-  #about {
-    text-align: center;        /* Center-align the title */
-    margin-top: 60px;          /* Add space above */
-    margin-bottom: 30px;       /* Add space below */
-    font-size: 2.5rem;         /* Reasonable size for h1 */
-    font-weight: bold;         /* Make it bold */
-  }
+/* Style for the About title */
+#about {
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
 
-  /* Styling the paragraph under About */
-  #home p {
-    text-align: justify;       /* Justify text for professional look */
-    font-size: 1.1rem;         /* Slightly larger text */
-    line-height: 1.7;          /* Increase readability */
-    max-width: 800px;          /* Prevent too wide lines */
-    margin: 0 auto 50px auto;  /* Center it with margin at bottom */
-  }
+/* Style for the About paragraph */
+#home p {
+  text-align: justify;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  max-width: 800px;
+  margin: 0 auto 50px auto;
+}
 
-  /* Link styling (optional, improves links in paragraph) */
-  #home p a {
-    color: #0056b3;            /* Bootstrap primary dark blue */
-    text-decoration: none;     /* Remove underlines */
-  }
+/* Style for links inside the About paragraph */
+#home p a {
+  color: #0056b3;
+  text-decoration: none;
+}
 
-  #home p a:hover {
-    text-decoration: underline; /* Underline links on hover */
-  }
-</style>
+#home p a:hover {
+  text-decoration: underline;
+}
