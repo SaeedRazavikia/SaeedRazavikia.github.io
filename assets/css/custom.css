@@ -10,8 +10,8 @@
 /* Style for the About paragraph */
 #home p {
   text-align: justify;
-  font-size: 1.5rem;
-  line-height: 1.7;
+  font-size: 1.4rem;
+  line-height: 1.6;
   max-width: 800px;
   margin: 0 auto 50px auto;
 }
