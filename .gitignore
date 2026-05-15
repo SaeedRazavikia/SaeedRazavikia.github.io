@@ -1,0 +1,11 @@
+# Large simulation outputs (use LFS or store outside the repo if needed)
+Data/
+
+# Exported Simulink models (large; distribute via linkExampleModels / README)
+models/*.slx
+
+# Simulink simulation cache
+slprj/
+
+# MATLAB editor autosave
+*.asv
